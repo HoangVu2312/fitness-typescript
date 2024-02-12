@@ -41,9 +41,9 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
 
             {/* right side */}
             {isAboveMediumScreens ?
-            <div className={` ${flexBetween} w-full`}>
+            <div className={` ${flexBetween} w-full mx-3`}>
 
-              <div className={` ${flexBetween} w-full gap-8 text-sm`}>
+              <div className={` ${flexBetween} w-5/6 gap-8 text-sm`}>
               <Link page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
               <Link page="Benefits" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
               <Link page="Lessions" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
@@ -51,7 +51,6 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
               </div>
 
               <div className={` ${flexBetween} gap-8`}>
-              <p>Sign in</p>
               <ActionButton setSelectedPage={setSelectedPage}>
                     Get Membership
               </ActionButton>
